@@ -28,15 +28,18 @@ public class GradesAverage {
 
             numInput++;
         } while (numInput < numStudent);
-
+        
+        in.close();	
+        
         //sumup the array by loop
         int sumup = 0;
         for (int index = 0; index < arrStudent.length; index++) {
+        	sumup+= arrStudent[index];
         }
 
         //print it out
         int average = sumup / (numInput);
-
+        System.out.println("AVERAGE: " + average);
 
     }
 }

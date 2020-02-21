@@ -11,11 +11,12 @@ public class ReverseString {
         System.out.print("Enter a String: ");
         inStr = in.next();   // use next() to read a String
         inStrLen = inStr.length();
+        char[] ch = inStr.toCharArray();
 
         // Use inStr.charAt(index) in a loop to extract character at "index" from inStr
         // The String'GradesAverage index begins at 0 from the left.
         for (int i = inStrLen - 1; i >= 0; --i) {  // Process the String from the right
-         //......
+         System.out.print(ch[i]);
         }
     }
 }
